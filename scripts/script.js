@@ -11,3 +11,10 @@ context.fill();
 context.lineWidth = 5;
 context.strokeStyle = '#003300';
 context.stroke();
+
+$(document).on('keypress', function(e) {
+    if(e.which == 13)
+    {
+        alert('test');
+    }
+})
