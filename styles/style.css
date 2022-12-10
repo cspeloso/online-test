@@ -1,3 +1,15 @@
 #game_canvas{ 
     border:1px solid black;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color:rgb(44, 42, 42);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color:rgb(230, 230, 230);
+    }
+}

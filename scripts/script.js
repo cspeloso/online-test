@@ -39,4 +39,19 @@ $(document).on('keypress', function(e) {
     {
         context.centerX += 1;
     }
-})
+});
+
+// function GameObject(x,y,w,h,color)
+class GameObject {
+
+    //  x, y, width, height, color
+
+    constructor(x,y,width,height,color){
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
+        this.color = color;
+    }
+
+}
