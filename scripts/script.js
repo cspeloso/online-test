@@ -44,25 +44,14 @@ function animate(){
 }
 
 // function GameObject(x,y,w,h,color)
-class GameObject {
+function GameObject(x,y,width,height,color) {
 
-    //  x, y, width, height, color
-
-    constructor(x,y,width,height,color){
-        this.x = x;
-        this.y = y;
-        this.width = width;
-        this.height = height;
-        this.color = color;
-    }
-
-    drawObject(){        
+    this.drawObject = function(){        
 		context.save();
             context.fillStyle = this.color;
             context.translate(this.x, this.y);
             context.fillRect((-this.width/2), (-this.height/2), this.width, this.height);
         context.restore();
-        return null;
     }
 
 }
