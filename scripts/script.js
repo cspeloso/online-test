@@ -35,8 +35,12 @@ $(document).on('keypress', function(e) {
 var interval = 1000/60;
 var update = setInterval(animate, interval);
 
+var player = GameObject(canvas.width/2, canvas.height/2, 50, 50, 'red');
+
 function animate(){
     context.clearRect(0,0, canvas.width, canvas.height);
+
+    player.drawObject();
 }
 
 // function GameObject(x,y,w,h,color)
