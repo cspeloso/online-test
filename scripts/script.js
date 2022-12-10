@@ -1,4 +1,4 @@
-const canvas = document.getElementById('myCanvas');
+const canvas = document.getElementById('game_canvas');
 const context = canvas.getContext('2d');
 const centerX = canvas.width / 2;
 const centerY = canvas.height / 2;
