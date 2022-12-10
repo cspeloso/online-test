@@ -5,15 +5,6 @@ const centerY = canvas.height / 2;
 const radius = 70;
 
 
-
-context.beginPath();
-context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
-context.fillStyle = 'green';
-context.fill();
-context.lineWidth = 5;
-context.strokeStyle = '#003300';
-context.stroke();
-
 $(document).on('keypress', function(e) {
 
     //  up
@@ -41,6 +32,13 @@ $(document).on('keypress', function(e) {
     }
 });
 
+var interval = 1000/60;
+var update = setInterval(animate, interval);
+
+function animate(){
+    context.clearRect(0,0, canvas.width, canvas.height);
+}
+
 // function GameObject(x,y,w,h,color)
 class GameObject {
 
@@ -52,6 +50,14 @@ class GameObject {
         this.width = width;
         this.height = height;
         this.color = color;
+    }
+
+    drawObject(){        
+		context.save();
+            context.fillStyle = this.color;
+            context.translate(this.x, this.y);
+            context.fillRect((-this.width/2), (-this.height/2), this.width, this.height);
+        context.restore();
     }
 
 }
