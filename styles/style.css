@@ -1,3 +1,6 @@
+body {
+    background-color:white;
+}
 #game_canvas{ 
     border:1px solid black;
 }
@@ -7,11 +10,7 @@
         background-color:rgb(44, 42, 42);
         color:white;
     }
-}
-
-@media (prefers-color-scheme: light) {
-    body {
-        background-color:rgb(230, 230, 230);
-        color:black;
+    #game_canvas {
+        border:1px solid white;
     }
 }
