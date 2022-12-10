@@ -14,8 +14,13 @@
     <p>online game</p>
     <p>test 2</p>
 
-    <canvas id='game_canvas' width='300' height='300'></canvas>
+    <canvas id='game_canvas' width='300' height='300'>
 
+
+
+    </canvas>
+
+    <script src='scripts/script.js'></script>
 
 </body>
 </html>
