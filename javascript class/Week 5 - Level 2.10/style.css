@@ -1,0 +1,29 @@
+canvas{
+	position:absolute;
+	margin-top:122px;
+	margin-left: -286px;
+}
+
+#score{
+	color:white;
+}
+
+#lives{
+	color:white;
+}
+
+#start{
+	font-size:60px;
+	margin-bottom:5px;
+}
+
+#stop{
+	font-size:60px;
+	margin-bottom:5px;
+}
+
+#loseScreen{
+	color:white;
+	position:absolute;
+	margin-left:300px;
+}

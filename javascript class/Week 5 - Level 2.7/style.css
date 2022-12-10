@@ -1,0 +1,24 @@
+canvas{
+	border: 1px solid black;
+}
+
+#score{
+	font-size:30px;
+	color:red;
+	border:1px solid black;
+	width:90px;
+	position:absolute;
+	background-color:white;
+	margin-top:0px;
+}
+
+#lives{
+	font-size:30px;
+	color:blue;
+	border:1px solid black;
+	width:90px;
+	position:absolute;
+	background-color:white;
+	margin-top:0px;
+	margin-left:91px;
+}

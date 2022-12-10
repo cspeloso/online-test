@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>Week 1</title>
+</head>
+
+<body>
+	
+	
+<script type="text/javascript">
+	
+	//------------------VARIABLES-----------------------
+	
+	var a = "test";
+	var b = 90;
+	var c = false;
+	
+	
+	console.log(
+		"a: " + typeof a + "\n" + 
+		"b: " + typeof b + "\n" + 
+		"c: " + typeof c)
+	
+	//-------------------FUNCTIONS----------------------
+	
+	var num1 = 5;
+	var num2 = 2;
+	
+	function add(x, y)
+	{
+		return x + y;
+		
+	}
+	
+	console.log(num1 + " + " + num2 + " = " + add(num1, num2));
+	
+	//----------------LOOPS--AND--ARRAYS----------------
+	
+	myArray = [];
+	
+	for (var i = 1;i < 100;i++)
+	{
+		myArray[i - 1] = i;
+	}
+	
+	console.log(myArray);
+	
+	//--------------------FizzBuzz----------------------
+	
+	myArray2 = [];
+	
+	for (i = 1; i < 100;i++)
+	{		
+		var a = i%2;
+		var b = i%3;
+		
+		if ((a === 0) && (b === 0))
+		{
+			myArray2[i - 1] = "fizz buzz";
+		}
+		
+		else if (a === 0)
+		{
+			myArray2[i - 1] = "fizz";
+		}
+		
+		else if (b === 0)
+		{
+			myArray2[i - 1] = "buzz";
+		}
+		
+		else
+		{
+			myArray2[i - 1] = i;
+		}
+	}
+	
+	console.log(myArray2);
+	
+	//---------------------Objects----------------------
+	
+	myArray3 = [];
+	
+	var myObject = {index:0,label:"string"};
+	
+	for (i=1;i<100;i++)
+	{
+		var a = i%2;
+		var b = i%3;
+		
+		if ((a === 0) && (b === 0))
+		{
+			myObject = {index:i,label:"fizz buzz"};
+		}
+		
+		else if (a === 0)
+		{
+			myObject = {index:i,label:"fizz"};
+		}
+		
+		else if (b === 0)
+		{
+			myObject = {index:i,label:"buzz"};
+		}
+		
+		else
+		{
+			myObject = {index:i};
+		}
+		
+		
+		myArray3[i - 1] = myObject; 
+		
+		
+	}
+	
+	console.log(myArray3);
+	
+	
+	
+	
+	
+	
+	
+	
+	/*for (i = 1;i<100;i++)
+	{
+		var a = i%2;
+		var b = i%3;
+		
+		var label = "t";
+		
+		if ((a === 0) && (b === 0))
+		{
+			label = "fizz buzz";
+		}
+		
+		else if (a === 0)
+		{
+			label = "fizz";
+		}
+		
+		else if (b === 0)
+		{
+			label = "buzz";
+		}
+		
+		index = i;
+		
+		console.log(index);
+		console.log(label);
+		
+		if (label = "t")
+		{
+			myObject = {index:i};
+			myArray3[i] = {myObject};
+		}
+		
+		else
+		{
+			myObject = {index:i,label:label};
+			myArray3[i] = {index,label};
+		}
+		
+		
+			
+	}
+	
+	console.log(myArray3);*/
+	
+</script>
+
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
