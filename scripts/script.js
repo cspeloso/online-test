@@ -4,6 +4,8 @@ const centerX = canvas.width / 2;
 const centerY = canvas.height / 2;
 const radius = 70;
 
+
+
 context.beginPath();
 context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
 context.fillStyle = 'green';
@@ -13,8 +15,28 @@ context.strokeStyle = '#003300';
 context.stroke();
 
 $(document).on('keypress', function(e) {
-    if(e.which == 13)
+
+    //  up
+    if(e.which == 38 || e.which == 119)
     {
-        alert('test');
+        context.centerY += 1;
+    }
+
+    //  down
+    if(e.which == 40 || e.which == 115)
+    {
+        context.centerY -= 1;
+    }
+
+    //  left
+    if(e.which == 37 || e.which == 97)
+    {
+        context.centerX -= 1;
+    }
+
+    //  right
+    if(e.which == 39 || e.which == 100)
+    {
+        context.centerX += 1;
     }
 })
