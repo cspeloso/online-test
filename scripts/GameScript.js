@@ -2,4 +2,4 @@
 var canvas = document.querySelector('#game_canvas');
 var context = canvas.getContext('2d');
 
-context.FillRect(25,25,25,25);
+context.fillRect(25,25,25,25);
