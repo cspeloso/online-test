@@ -27,4 +27,4 @@ function release(e) {
         a = false;
     if(e.keyCode == 68) 
         d = false;    
-}
+} 
