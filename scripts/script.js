@@ -13,18 +13,21 @@ var player = new Player(50,100, 50, 50, "red");
 function animate() {
     context.clearRect(0,0,canvas.width, canvas.height);
     
-    if(w && player.bottom > canvas.height) player.y -= 8;
-    if(s) player.y += 8;
+    if(w && player.bottom() < canvas.height) 
+    {
+        player.y -= 8;
+    }
+    if(s && player.top() > 0) player.y += 8;
     if(a) player.x -= 8;
     if(d) player.x += 8;
 
-    if(this.bottom > canvas.height)
+    if(this.bottom() > canvas.height)
         player.y = canvas.height - player.h/2;
-    if(this.top < 0)
+    if(this.top() < 0)
         player.y = 0 + player.h/2;
-    if(this.left < 0)
+    if(this.left() < 0)
         player.x = 0 + player.h/2;
-    if(this.right > canvas.width)
+    if(this.right() > canvas.width)
         player.x = canvas.width - player.w/2;
 
     player.drawRect();
@@ -49,10 +52,18 @@ function Player(x = canvas.width/2,y = canvas.height/2,w = 50,h = 50,color = "#F
         context.restore();
     }
 
-    this.left = this.x - this.w/2;
-    this.right = this.x + this.w/2;
+    this.left = function() {
+        this.x - this.w/2;
+    }
+    this.right = function() {
+        this.x + this.w/2;
+    }
 
-    this.top = this.y - this.h/2;
-    this.bottom = this.y + h/2;
+    this.top = function() {
+        this.y - this.h/2;
+    }
+    this.bottom = function() {
+        this.y + h/2;
+    }
 
 }
