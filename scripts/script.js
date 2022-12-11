@@ -1,9 +1,11 @@
-const canvas = document.getElementById('game_canvas');
-const context = canvas.getContext('2d');
-const centerX = canvas.width / 2;
-const centerY = canvas.height / 2;
-const radius = 70;
+var canvas = document.getElementById('game_canvas');
+var context = canvas.getContext('2d');
+var centerX = canvas.width / 2;
+var centerY = canvas.height / 2;
+var radius = 70;
 
+var interval = 1000/60;
+var update = setInterval(animate, interval);
 
 $(document).on('keypress', function(e) {
 
@@ -32,27 +34,8 @@ $(document).on('keypress', function(e) {
     }
 });
 
-var interval = 1000/60;
-var update = setInterval(animate, interval);
 
-var player = GameObject(canvas.width/2, canvas.height/2, 50, 50, 'red');
 
-function animate(){
-    context.clearRect(0,0, canvas.width, canvas.height);
-
-    player.drawObject();
-}
-
-// function GameObject(x,y,w,h,color)
-function GameObject(x,y,width,height,color) {
+function GameObject(x = canvas.width/2,y = canvas.height/2,w = 50,h = 50,color = "#FF0000") {
     
-	this.drawRect = function()
-	{
-		context.save();
-			context.fillStyle = this.color;
-			context.translate(this.x, this.y);
-			context.fillRect((-this.width/2), (-this.height/2), this.width, this.height);
-		context.restore();
-	}
-
 }
