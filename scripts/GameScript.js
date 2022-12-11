@@ -27,6 +27,6 @@ function CreatePlayer(x,y,width,height,color) {
 
 }
 
-var player = CreatePlayer(50,50,50,50, 'red');
+var player = new CreatePlayer(50,50,50,50, 'red');
 
 player.drawPlayer();
