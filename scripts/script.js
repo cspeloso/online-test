@@ -5,7 +5,7 @@ var centerY = canvas.height / 2;
 var radius = 70;
 
 var interval = 1000/60;
-var update = setInterval(animate, interval);
+// var update = setInterval(animate, interval);
 
 var player = new GameObject(50,100, 50, 50, "red");
 
