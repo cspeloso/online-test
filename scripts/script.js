@@ -18,13 +18,13 @@ function animate() {
     if(a && player.left() > 0) player.x -= 8;
     if(d && player.right() < canvas.width) player.x += 8;
 
-    if(this.bottom > canvas.height)
+    if(player.bottom > canvas.height)
         player.y = canvas.height - player.h/2;
-    if(this.top < 0)
+    if(player.top < 0)
         player.y = 0 + player.h/2;
-    if(this.left < 0)
+    if(player.left < 0)
         player.x = 0 + player.h/2;
-    if(this.right > canvas.width)
+    if(player.right > canvas.width)
         player.x = canvas.width - player.w/2;
 
     player.drawRect();
