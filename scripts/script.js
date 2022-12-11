@@ -48,10 +48,10 @@ function GameObject(x = canvas.width/2,y = canvas.height/2,w = 50,h = 50,color =
         context.restore();
     }
 
-    this.left = this.x - this.width/2;
-    this.right = this.x + this.width/2;
+    this.left = this.x - this.w/2;
+    this.right = this.x + this.w/2;
 
-    this.top = this.y - this.height/2;
-    this.bottom = this.y + height/2;
+    this.top = this.y - this.h/2;
+    this.bottom = this.y + h/2;
 
 }
