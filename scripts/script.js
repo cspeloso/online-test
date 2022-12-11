@@ -7,7 +7,7 @@ var radius = 70;
 var interval = 1000/60;
 // var update = setInterval(animate, interval);
 
-var player = new GameObject(50,100, 50, 50, "red");
+var player = new Player(50,100, 50, 50, "red");
 
 
 function animate() {
@@ -29,7 +29,7 @@ function animate() {
 
 }
 
-function GameObject(x = canvas.width/2,y = canvas.height/2,w = 50,h = 50,color = "#FF0000") {
+function Player(x = canvas.width/2,y = canvas.height/2,w = 50,h = 50,color = "#FF0000") {
     
     this.x = x;
     this.y = y;

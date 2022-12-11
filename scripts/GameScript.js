@@ -2,10 +2,6 @@
 var canvas = document.querySelector('#game_canvas');
 var context = canvas.getContext('2d');
 
-context.fillRect(25,25,25,25);
-
-
-
 function CreatePlayer(x,y,width,height,color) {
     this.x = x;
     this.y = y;
@@ -24,9 +20,12 @@ function CreatePlayer(x,y,width,height,color) {
 
         context.restore();
     }
-
 }
 
 var player = new CreatePlayer(50,50,50,50, 'red');
 
 player.drawPlayer();
+
+
+
+
