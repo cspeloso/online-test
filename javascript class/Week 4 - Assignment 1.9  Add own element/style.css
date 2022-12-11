@@ -1,0 +1,144 @@
+canvas{
+	border:3px solid black;
+	margin-top:90px;
+	display:block;
+	position:absolute;
+	/*background:url('lasagna.jpg');*/
+	background-repeat:no-repeat;
+}
+
+#start{
+	width:90px;
+	height:30px;
+	padding-top:-5px;
+}
+
+#quit{
+	width:90px;
+	height:30px;
+}
+
+#menu{
+	border:3px solid black;
+	width:350px;
+	padding:10px;
+	background-color:#5e9ff9;
+	margin-top:90px;
+	position:absolute;
+	margin-left:650px;
+}
+
+.bounceForm{
+	position:absolute;
+	width:100px;
+	margin-top:2px;
+	margin-left:5px;
+}
+
+.bounceForm2{
+	position:absolute;
+	width:100px;
+	margin-top:2px;
+	margin-left:5px;
+	text-align:right;
+}
+
+#bounceFormID{
+	border:3px solid black;
+	background-color:white;
+	width:200px;
+	margin-left:100px;
+	margin-top:10px;
+}
+
+#colorBounce{
+	margin-left:125px;
+}
+#colorBounce2{
+	margin-left:125px;
+}
+
+#random{
+	margin-top:25px;
+	margin-left:10px;
+	position:absolute;
+}
+
+/*speed change thing*/
+#speedBounce{
+	margin-left:125px;
+}
+
+#speedBounce2{
+	margin-left:125px;
+}
+
+/*background color change thing*/
+#backgroundBtn{
+	margin-left:125px;
+}
+
+#backgroundBtn2{
+	margin-left:125px;
+}
+
+#epilepsy{
+	font-size:50px;
+	position:absolute;
+	margin-top:10px;
+	font-family:jokerman;
+	color:white;
+	margin-left:30px;
+}
+
+#bounceCounter{
+	position:absolute;
+	margin-top:75px;
+	font-size:30px;
+}
+
+#lasagnaBtn{
+	margin-left:126px;
+}
+
+#lasagnaBtn2{
+	margin-left:126px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
