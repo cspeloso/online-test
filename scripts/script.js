@@ -18,7 +18,7 @@ function animate() {
         player.y -= 8;
     }
     if(s && player.top > 0) player.y += 8;
-    if(a) player.x -= 8;
+    if(a && player.left > 0) player.x -= 8;
     if(d) player.x += 8;
 
     if(this.bottom > canvas.height)
