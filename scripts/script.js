@@ -53,17 +53,17 @@ function Player(x = canvas.width/2,y = canvas.height/2,w = 50,h = 50,color = "#F
     }
 
     this.left = function() {
-        this.x - this.w/2;
+        return this.x - this.w/2;
     }
     this.right = function() {
-        this.x + this.w/2;
+        return this.x + this.w/2;
     }
 
     this.top = function() {
-        this.y - this.h/2;
+        return this.y - this.h/2;
     }
     this.bottom = function() {
-        this.y + h/2;
+        return this.y + h/2;
     }
 
 }
