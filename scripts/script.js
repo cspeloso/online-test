@@ -13,7 +13,7 @@ var player = new Player(50,100, 50, 50, "red");
 function animate() {
     context.clearRect(0,0,canvas.width, canvas.height);
     
-    if(w && player.bottom() > canvas.height) player.y -= 8;
+    if(w && player.bottom > canvas.height) player.y -= 8;
     if(s) player.y += 8;
     if(a) player.x -= 8;
     if(d) player.x += 8;
