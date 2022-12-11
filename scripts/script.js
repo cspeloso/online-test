@@ -27,6 +27,7 @@ function animate() {
     if(this.right > canvas.width)
         player.x = canvas.width - player.w/2;
 
+    player.drawRect();
 }
 
 function Player(x = canvas.width/2,y = canvas.height/2,w = 50,h = 50,color = "#FF0000") {
