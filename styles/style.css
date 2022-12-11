@@ -1,6 +1,11 @@
 body {
     background-color:white;
     font-family:arial, sans-serif;
+    display:flex;
+    flex-direction:column;
+}
+a {
+    color:rgb(92, 92, 201);
 }
 #game_canvas{ 
     border:1px solid black;
