@@ -1,5 +1,6 @@
 body {
     background-color:white;
+    font-family:'sans-serif';
 }
 #game_canvas{ 
     border:1px solid black;
