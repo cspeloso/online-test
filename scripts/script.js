@@ -18,14 +18,14 @@ function animate() {
     if(a && player.left() > 0) player.x -= 8;
     if(d && player.right() < canvas.height) player.x += 8;
 
-    // if(this.bottom > canvas.height)
-    //     player.y = canvas.height - player.h/2;
-    // if(this.top < 0)
-    //     player.y = 0 + player.h/2;
-    // if(this.left < 0)
-    //     player.x = 0 + player.h/2;
-    // if(this.right > canvas.width)
-    //     player.x = canvas.width - player.w/2;
+    if(this.bottom > canvas.height)
+        player.y = canvas.height - player.h/2;
+    if(this.top < 0)
+        player.y = 0 + player.h/2;
+    if(this.left < 0)
+        player.x = 0 + player.h/2;
+    if(this.right > canvas.width)
+        player.x = canvas.width - player.w/2;
 
     player.drawRect();
 }
