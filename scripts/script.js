@@ -16,7 +16,7 @@ function animate() {
     if(w && player.top() > 0) player.y -= 8;
     if(s && player.bottom() < canvas.height) player.y += 8;
     if(a && player.left() > 0) player.x -= 8;
-    if(d && player.right() < canvas.height) player.x += 8;
+    if(d && player.right() < canvas.width) player.x += 8;
 
     if(this.bottom > canvas.height)
         player.y = canvas.height - player.h/2;
