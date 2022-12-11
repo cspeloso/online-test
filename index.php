@@ -14,7 +14,7 @@
     <p>online game</p>
     <p>test 2</p>
 
-    <canvas id='game_canvas' width='300' height='300'>
+    <canvas id='game_canvas'>
 
 
 
