@@ -13,12 +13,9 @@
     <h1>Online Test</h1>
     <p>online game</p>
     <p>test 2</p>
+    <a href='/websockets test/index.php'>Click here to go to the websockets test</a>
 
-    <canvas id='game_canvas'>
-
-
-
-    </canvas>
+    <canvas id='game_canvas'></canvas>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src='scripts/script.js'></script>
