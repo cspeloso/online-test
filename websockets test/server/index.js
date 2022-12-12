@@ -7,7 +7,7 @@ wss.on("connection", ws => {
     console.log("New connection made!");
 
     ws.on("message", data => {
-        console.log("Client has sent us: " + data);
+        console.log(`Client has sent us: ${data}`);
     });
 
     ws.on("close", () => {
