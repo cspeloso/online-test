@@ -26,10 +26,9 @@
 
         //  when your connection is made to the server
         ws.addEventListener("open", () => {
+            //  log that we're connected and set the connection variable to true
             console.log("We're connected!");
             wsOpen = true;
-
-            ws.send("Hey, how's it going?");
         });
 
         ws.addEventListener("close", () => {
