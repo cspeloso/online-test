@@ -9,7 +9,7 @@ wss.on("connection", ws => {
     ws.on("message", data => {
         console.log(`Client has sent us: ${data}`);
 
-        ws.send(data.toUpperCase());
+        ws.send(data.toString().toUpperCase());
     });
 
     ws.on("close", () => {
