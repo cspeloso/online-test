@@ -14,7 +14,7 @@ wss.on("connection", ws => {
             client.send(message);
         });
 
-        ws.send(data.toString().toUpperCase());
+        // ws.send(data.toString().toUpperCase());
     });
 
     ws.on("close", () => {
