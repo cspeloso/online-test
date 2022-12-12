@@ -8,6 +8,7 @@ wss.on("connection", ws => {
 
     ws.on("message", data => {
         console.log(`Client has sent us: ${data}`);
+        var message = data.toString().toUpperCase();
 
         wss.clients.forEach(function e(client){
             client.send(message);
