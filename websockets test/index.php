@@ -11,6 +11,9 @@
     <h1>Welcome to the websockets test</h1>
     <p>This is a websockets test my negro.</p>
 
+    <script>
+        const ws = new WebSocket("ws://localhost:8082");
+    </script>
 
 
 </body>
