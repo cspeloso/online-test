@@ -16,7 +16,7 @@
         
     </div>
 
-    <input id='user_message' placeholder="Enter chat" />
+    <input id='user_message' placeholder="Enter chat" type='text' />
     <button class='send-chat' onclick='sendChat()'>Send Chat</button>
 
     <script>
@@ -43,7 +43,7 @@
 
 
         function sendChat() {
-            var userMessage = $('#user_message').text();
+            var userMessage = $('#user_message').val();
 
             //  if the websocket is open, send a chat
             if(wsOpen)
