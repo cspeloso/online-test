@@ -16,6 +16,8 @@
 
         ws.addEventListener("open", () => {
             console.log("We're connected!");
+
+            ws.send("Hey, how's it going?");
         });
     </script>
 
