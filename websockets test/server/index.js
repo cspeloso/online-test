@@ -9,6 +9,10 @@ wss.on("connection", ws => {
     ws.on("message", data => {
         console.log(`Client has sent us: ${data}`);
 
+        WebSocket.Server.clients.forEach(function e(client) {
+            client.send(message);
+        });
+
         ws.send(data.toString().toUpperCase());
     });
 
