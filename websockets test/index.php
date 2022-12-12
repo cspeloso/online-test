@@ -19,6 +19,10 @@
 
             ws.send("Hey, how's it going?");
         });
+
+        ws.addEventListener("message", e => {
+            console.log(e);
+        });
     </script>
 
 
