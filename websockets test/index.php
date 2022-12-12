@@ -16,21 +16,42 @@
         
     </div>
 
+    <input id='user_message' placeholder="Enter chat" />
+    <button class='send-chat' onclick='sendChat()'>Send Chat</button>
+
     <script>
 
         const ws = new WebSocket("ws://localhost:8082");
+        var wsOpen = false;
 
         //  when your connection is made to the server
         ws.addEventListener("open", () => {
             console.log("We're connected!");
+            wsOpen = true;
 
             ws.send("Hey, how's it going?");
+        });
+
+        ws.addEventListener("close", () => {
+            wsOpen = false;
         });
 
         //  when you receive a message from the server
         ws.addEventListener("message", e => {
             $('.chats').append(`<p class='chat'>${e.data}</p>`);
         });
+
+
+        function sendChat() {
+            var userMessage = $('#user_message').text();
+
+            //  if the websocket is open, send a chat
+            if(wsOpen)
+            {
+                ws.send(userMessage);
+            }
+            
+        }
 
     </script>
 
